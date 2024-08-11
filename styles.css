@@ -1,13 +1,16 @@
 body {
     box-sizing: border-box;
     background-color: #f3eae3;
+    font-size: 16px;
 }
 
+/* around main box */
 .wrapper {
     height: 100%;
     width: 100%;
 }
 
+/* grid containing 2 boxes */
 .main-box {
     width: 700px;
     height: 500px;
@@ -16,34 +19,63 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
+/* image box */
 .left-box {
     background-image: url('Assets/best-chanel-perfume-gabrielle-768x1024.jpeg');
     background-size: cover;
     border-radius: 15px 0 0 15px;
 }
 
+/* content box */
 .right-box {
     background-color: #ffffff;
     border-radius: 0 15px 15px 0;
-    padding: 5px 20px;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     align-content: center;
 }
 
-.h1 {
+/* Gabrielle text */
+.right-box-content h1 {
+    font-family: Georgia, 'Times New Roman', sans-serif;
 
 }
 
-.h2 {
-
+/* Perfume header */
+.right-box-content h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5rem;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: #a4a3b0
 }
 
-.h3 {
-
+/* Big green price */
+h3 {
+    font-size: 2.5rem;
+    margin-left: -25px;
+    color: #3f8068;
+    font-family: 'Bohemian Soul', Didot;
+    font-weight: 100;
 }
 
-p {
-    
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Description */
+.right-box-content p {
+    font-family: Helvetica, sans-serif;
+    color: #a4a3b0;
+    font-weight: 500;
+}
+
+/* original price */
+.price p {
+    text-decoration: line-through;
 }
 
